@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập 7</title>
+</head>
+<body>
+<!--Tính cước điện thoại cho một hộ gia đình với các thông số đã cho-->
+<script>
+    let soDien = +prompt("Nhập số điện : ");
+    let cuocPhi=0;
+    if (soDien>50){
+        cuocPhi+=soDien*5
+    } else if (soDien>100){
+        cuocPhi+=soDien*7
+    }else {
+        cuocPhi+=soDien*3
+    }
+    alert( "cước phí = " + cuocPhi + ".000 nghìn VND");
+</script>
+</body>
+</html>
