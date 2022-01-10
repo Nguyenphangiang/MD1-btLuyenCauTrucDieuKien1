@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập 6</title>
+</head>
+<body>
+<h2>Nhập Doanh Số đơn vị là : triệu</h2>
+<table>
+    <tr>
+        <td>Doanh Số</td>
+        <td>Hoa Hồng</td>
+    </tr>
+    <tr>
+        <td>100m+</td>
+        <td>15%</td>
+    </tr>
+    <tr>
+        <td>100m-</td>
+        <td>10%</td>
+    </tr>
+    <tr>
+        <td>50m</td>
+        <td>8%</td>
+    </tr>
+</table>
+
+<script>
+    let hoaHong = 0;
+    let ds = Number(prompt("Nhập Doanh Số :"));
+    if (ds>100) {
+        hoaHong+=(ds*15)/100;
+    }
+    if (ds < 100) {
+    }
+        if (ds<50){
+                hoaHong+=(ds*8)/100;
+        }   else{
+                hoaHong+=(ds*10)/100;
+        }
+    alert("Hoa Hồng = " + hoaHong)
+</script>
+</body>
+</html>
