@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 5</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="text" id="kiemtra"></td>
+        <td><input type="text" id="giuaky"></td>
+        <td><input type="text" id="cuoiky"></td>
+        <td><input type="button" onclick="tinhHocLuc()" value="Tổng"></td>
+    </tr>
+    <tr>
+        <td>Điểm kiểm tra</td>
+        <td>Điểm giữa kỳ</td>
+        <td>Điểm cuối kỳ</td>
+        <td></td>
+    </tr></label>
+</table>
+<script>
+    function tinhHocLuc(){
+        let diemKiemTra=Number(document.getElementById("kiemtra").value);
+        let diemGiuaKy= Number(document.getElementById("giuaky").value)*2;
+        let diemCuoiKy= Number(document.getElementById("cuoiky").value)*3;
+        let totalScore= Math.floor((diemKiemTra + diemGiuaKy + diemCuoiKy)/6);
+        if (totalScore >6){
+            if (totalScore>8){
+                alert( totalScore + "  = Congratulation ! Học sinh giỏi xD ");
+            }else {
+                alert( totalScore + " = Congratulation ! Học sinh khá !! ");
+            }
+        } else if (totalScore>3){
+            alert(totalScore + " = Được lên lớp ! Học sinh trung bình !!");
+        } else {
+            alert("Đúp rồi còn đâu !");
+        }
+    }
+
+</script>
+</body>
+</html>
