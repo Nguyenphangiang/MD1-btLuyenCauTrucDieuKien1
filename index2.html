@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập 3</title>
+</head>
+<body>
+<h1 id="printNum"></h1>
+<script>
+    let inputNum= +prompt("Nhập 1 số bất kỳ !!");
+    let max= "số bạn nhập là =" + inputNum + ".Và lớn hơn 0";
+    let minus= "số bạn nhập là =" + inputNum + ".Và nhỏ hơn 0";
+    if (inputNum<0){
+        document.getElementById("printNum").innerText = minus;
+    } else {
+        document.getElementById("printNum").innerText = max;
+    }
+</script>
+</body>
+</html>
